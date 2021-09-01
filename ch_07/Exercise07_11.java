@@ -42,6 +42,7 @@ public class Exercise07_11 {
     public static double deviation(double[] x) {
         double numerator = 0.0;
         double denominator = x.length - 1;
+        double mean = mean(x);
         for (double d : x) {
             numerator += Math.pow((d - mean), 2);
         }
